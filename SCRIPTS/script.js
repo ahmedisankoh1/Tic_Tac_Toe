@@ -1,5 +1,5 @@
 const board = document.getElementById('board');
-const cells = document.querySelectorAll('.cell');
+var cells = document.querySelectorAll('.cell');
 const resetButton = document.getElementById('reset');
 const toggleModeButton = document.getElementById('toggle-mode');
 const messageDisplay = document.getElementById('message');
@@ -155,5 +155,5 @@ function resetGame() {
 function toggleMode() {
     aiMode = !aiMode;
     resetGame();
-    toggleModeButton.textContent = aiMode ? 'Switch to Two Player Mode' : 'Switch to Single Player Mode';
+    toggleModeButton.textContent = aiMode ? 'Switch to Two Player Mode' : 'Switch to AI mode';
 }

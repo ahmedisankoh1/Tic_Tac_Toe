@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../images/tic-3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+:root {
+    --btn-color: #56e5e8;
+    --btn-color-hover: #92eaec;
+}
+.home-btn a>button {
+    /* background-color:blue; */
+    margin-top: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top:10px ;
+    margin-left:10px ;
+    padding: 10px 25px;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    background-color: var(--btn-color);
+    
+}
+#timeSpent {
+    position: absolute;
+    top: 0px;
+    /* display: none; */
+    right: 10px;
+    margin-top: 8px;
+    font-size: 24px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+}
+.home-btn button:hover {
+    cursor: pointer;
+    background-color: var(--btn-color-hover);
+}
+.container {
+    /* background-color: red; */
+    text-align: center;
+}
+#toggle-mode {
+    margin-top: 20px;
+    padding: 5px 20px;
+    font-size: 1em;
+    border-radius: 20px;
+    background-color: var(--btn-color);
+    transition: 0.5s ease;
+}
+#toggle-mode:hover {
+    cursor: pointer;
+    background-color:#92eaec ;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin: 25px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(225, 229, 196);
+    border: 2px solid #19989a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+#reset {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 20px;
+    transition: 0.5s ease;
+    background-color: #56e5e8; ;
+}
+#reset:hover {
+    cursor: pointer;
+    background-color:#92eaec 
+}
+
+.winning-cell {
+    background-color: yellow;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
