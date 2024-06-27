@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+:root{
+    --bg: skyblue;
+}
+body {
+    background-image: url('../images/land-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.058);
+}
+form {
+    box-shadow: 0px 0px 10px var(--bg);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 450px;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+i {
+    font-size: 100px;
+}
+input {
+    border-radius: 10px;
+    height: 25px;
+    padding: 5px;
+    width: 90%;
+}
+button {
+    font-size: large;
+    padding: 10px 50px;
+    border-radius: 20px;
+    background-color: var(--bg);
+    transition: 0.5s ease;
+
+}
+button:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: blue;
+}
+a:hover {
+    text-decoration: underline;
+}

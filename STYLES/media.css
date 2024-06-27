@@ -1,0 +1,282 @@
+                /* adjustments for different screens */
+
+/* Extra Small Devices (Phones, <576px) */
+@media (max-width: 575.98px) {
+  header {
+    flex-direction: row;
+    padding: 10px;
+  }
+
+  header nav ul {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .hero-body {
+    padding: 10px;
+  }
+
+  .hero-body .hero-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-body .hero-text {
+    width: 350px;
+    font-size: medium;
+  }
+
+  .hero img {
+    width: 100%;
+  }
+
+  .call-to-action button {
+    padding: 5px 10px;
+    font-size: medium;
+  }
+  .features-container {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+  }
+  .features-container .box {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .about {
+    padding: 50px 10px;
+  }
+  .about .content {
+    display: flex;
+    flex-direction: column ;
+  }
+  .about .content .text,
+  .about .content .img-box img {
+    width: 350px;
+  }
+}
+
+/* Small Devices (Small Tablets, ≥576px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  header {
+    padding: 10px 20px;
+  }
+
+  header .logo img {
+    width: 40px;
+  }
+
+  header nav button {
+    padding: 5px;
+    font-size: medium;
+  }
+
+  .hero-body .hero-text {
+    width: 90%;
+  }
+
+  .features-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .features-container .box {
+    width: 90%;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .content .img-box img,
+  .about .text {
+    width: 90%;
+  }
+}
+
+/* Medium Devices (Tablets, ≥768px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  header {
+    padding: 15px 30px;
+  }
+
+  header .logo img {
+    width: 45px;
+  }
+
+  header nav button {
+    padding: 5px 10px;
+    font-size: large;
+  }
+
+  .hero-body .hero-text {
+    width: 80%;
+  }
+
+  .features-container {
+    width: 700px;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .features-container .box {
+    width: 80%;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  /* .content .img-box img, */
+  .about .text {
+    width: 80%;
+  }
+}
+
+/* Large Devices (Laptops, ≥992px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  header {
+    padding: 20px 40px;
+  }
+
+  header .logo img {
+    width: 50px;
+  }
+
+  header nav button {
+    padding: 10px 15px;
+    font-size: larger;
+  }
+
+  .hero-body .hero-text {
+    width: 70%;
+  }
+  .hero-body .features-container {
+    width: 950px;
+  }
+
+  .features-container {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .features-container .box {
+    width: 45%;
+  }
+
+  .content {
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .about .text {
+    width: 50%;
+  }
+}
+
+/* Extra Large Devices (Desktops, ≥1200px) */
+@media (min-width: 1200px) and (max-width: 1599.98px) {
+  header {
+    padding: 20px 50px;
+  }
+
+  header .logo img {
+    width: 50px;
+  }
+
+  header nav button {
+    padding: 10px 20px;
+    font-size: larger;
+  }
+
+  .hero-body .hero-text {
+    width: 60%;
+  }
+
+  .features-container {
+    /* background-color: red; */
+    width: 90%;
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .features-container .box {
+    width: 30%;
+  }
+
+  .content {
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .about .text {
+    width: 40%;
+  }
+}
+
+/* Ultra-Wide Devices (Large Desktops, ≥1600px) */
+@media (min-width: 1600px) {
+  header {
+    padding: 20px 60px;
+  }
+  header nav ul li>a {
+    font-size: 30px;
+  }
+
+  header .logo img {
+    width: 60px;
+  }
+
+  header nav button {
+    padding: 10px 25px;
+    font-size: x-large;
+  }
+  .call-to-action button {
+    padding: 30px 50px;
+    font-size: 30px;
+  }
+  .hero-body .hero-text {
+    width: 70%;
+    font-size: 20px;
+  }
+  .hero-text p {
+    font-size: 50px;
+  }
+  .hero-text h1 {
+    font-size: 60px;
+  }
+  
+
+  .features-container {
+    flex-direction: row;
+    width: 2000px;
+    gap: 70px;
+  }
+
+  .features-container .box {
+    width: 50%;
+  }
+  .features-container .box p {
+    font-size: 50px;
+  }
+  .features-container .box .text h4 {
+    font-size: 60px;
+  }
+
+
+  .content {
+    flex-direction: row;
+    gap: 70px;
+  }
+
+  .about .text {
+    width: 50%;
+  }
+  .about .content .text p {
+    font-size: 50px;
+  }
+}
