@@ -218,7 +218,7 @@
   }
 }
 
-/* Ultra-Wide Devices (Large Desktops, ≥1600px) */
+/* Ultra-Wide Devices (Large Desktops, >= 1600px) */
 @media (min-width: 1600px) {
   header {
     padding: 20px 60px;
@@ -254,6 +254,69 @@
   .features-container {
     flex-direction: row;
     width: 2000px;
+    gap: 70px;
+  }
+
+  .features-container .box {
+    width: 50%;
+  }
+  .features-container .box p {
+    font-size: 50px;
+  }
+  .features-container .box .text h4 {
+    font-size: 60px;
+  }
+
+
+  .content {
+    flex-direction: row;
+    gap: 70px;
+  }
+
+  .about .text {
+    width: 50%;
+  }
+  .about .content .text p {
+    font-size: 50px;
+  }
+}
+
+devices greater than >=2500 
+@media (min-width: 2500px) {
+  header {
+    padding: 20px 60px;
+  }
+  header nav ul li>a {
+    font-size: 30px;
+  }
+
+  header .logo img {
+    width: 60px;
+  }
+
+  header nav button {
+    padding: 10px 25px;
+    font-size: x-large;
+  }
+  .call-to-action button {
+    padding: 30px 50px;
+    font-size: 30px;
+  }
+  .hero-body .hero-text {
+    width: 70%;
+    font-size: 20px;
+  }
+  .hero-text p {
+    font-size: 50px;
+  }
+  .hero-text h1 {
+    font-size: 60px;
+  }
+  
+
+  .features-container {
+    flex-direction: row;
+    width: 3000px;
     gap: 70px;
   }
 
