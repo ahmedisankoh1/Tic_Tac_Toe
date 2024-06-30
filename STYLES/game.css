@@ -1,13 +1,10 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
-    background-image: url('../images/tic-3.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: lightgrey;
     margin: 0;
 }
 
@@ -15,20 +12,24 @@ body {
     --btn-color: #56e5e8;
     --btn-color-hover: #92eaec;
 }
+header {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+}
 .home-btn a>button {
-    /* background-color:blue; */
-    margin-top: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top:10px ;
-    margin-left:10px ;
+    background-color:blue;
+    margin: 10px 10px;
     padding: 10px 25px;
     border-radius: 20px;
     transition: 0.5s ease;
     background-color: var(--btn-color);
     
-}
+} 
+
 
 .home-btn button:hover {
     cursor: pointer;
@@ -36,19 +37,28 @@ body {
 }
 
 #timeSpent {
-    position: absolute;
-    top: 0px;
-    display: none;
-    right: 10px;
-    margin-top: 8px;
     font-size: 24px;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 10px 10px rgba(0,0,0,0.1);
 }
-.container {
+.main-container {
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+.main-container .container {
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    align-items: center;
     text-align: center;
+    width: 400px;
 }
 #toggle-mode {
     margin-top: 20px;
@@ -83,8 +93,10 @@ body {
 }
 
 #reset {
-    margin-top: 20px;
-    padding: 10px 20px;
+    align-items: center;
+    width: 40% ;
+    margin: 20px;
+    padding: 10px 10px;
     font-size: 1em;
     border-radius: 20px;
     transition: 0.5s ease;
