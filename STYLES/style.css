@@ -12,7 +12,7 @@
   --h1-text-color: #fff;
   --btn-bg: rgb(173, 18, 173);
   --btn-bg-hover: purple;
-  --h2-font-size:2rem;
+  --h2-font-size: 2rem;
 }
 
 header {
@@ -165,6 +165,7 @@ header nav ul li>a {
   border: solid white;
   margin: 0px;
 }
+
 .box .snapshot img {
   width: 100%;
 }
@@ -204,16 +205,17 @@ header nav ul li>a {
   gap: 50px;
 }
 
-.about h2{
+.about h2 {
   font-size: var(--h2-font-size);
   color: purple;
 }
+
 .content .img-box img {
   width: 500px;
 }
 
 
-.about .text p{
+.about .text p {
   color: gray;
   font-size: 1.5rem;
   line-height: 1.3;
@@ -226,20 +228,87 @@ header nav ul li>a {
   flex-direction: column;
   border-top: solid 3px purple;
 }
+
 .container .links a>p {
   color: blue;
 }
+
 .container .links a>p:hover {
   cursor: pointer;
   text-decoration: underline;
 }
+
 .container .box h3,
 .container .links p {
   display: inline;
 }
 
 
-                /* adjustments for different screens */
+              /* adjustments for different screens */
+/* Screens >= 320 and <391*/
+@media (min-width: 320px) and (max-width: 391px ){
+  header {
+    flex-direction: row;
+    padding: 10px;
+    gap: 55px;
+    /* background-color: red; */
+  }
+
+  header nav ul {
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .hero-body {
+    padding: 10px;
+  }
+
+  .hero-body .hero-text h1 {
+    font-size: 30px;
+  }
+
+  .hero-body .hero-text {
+    margin-top: 100px;
+    width: 320px;
+    font-size: 30px;
+  }
+
+  .hero img {
+    width: 100%;
+  }
+
+  .call-to-action button {
+    padding: 5px 10px;
+    font-size: medium;
+  }
+
+  .features-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 30px;
+  }
+
+  .features .features-container .box {
+    background-color: red;
+    width: 320px;
+  }
+
+  .about {
+    padding: 50px 10px;
+  }
+
+  .about .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about .content .text,
+  .about .content .img-box img {
+    width: 350px;
+  }
+}
+
 
 /* Extra Small Devices (Phones, <576px) */
 @media (max-width: 767px) {
@@ -274,11 +343,13 @@ header nav ul li>a {
     padding: 5px 10px;
     font-size: medium;
   }
+
   .features-container {
     display: flex;
     flex-direction: column;
     width: 350px;
   }
+
   .features-container .box {
     width: 100%;
     padding: 10px;
@@ -287,10 +358,12 @@ header nav ul li>a {
   .about {
     padding: 50px 10px;
   }
+
   .about .content {
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
   }
+
   .about .content .text,
   .about .content .img-box img {
     width: 350px;
@@ -396,6 +469,7 @@ header nav ul li>a {
   .hero-body .hero-text {
     width: 70%;
   }
+
   .hero-body .features-container {
     width: 950px;
   }
@@ -464,6 +538,7 @@ header nav ul li>a {
   header {
     padding: 20px 60px;
   }
+
   header nav ul li>a {
     font-size: 30px;
   }
@@ -476,21 +551,25 @@ header nav ul li>a {
     padding: 10px 25px;
     font-size: x-large;
   }
+
   .call-to-action button {
     padding: 30px 50px;
     font-size: 30px;
   }
+
   .hero-body .hero-text {
     width: 70%;
     font-size: 20px;
   }
+
   .hero-text p {
     font-size: 50px;
   }
+
   .hero-text h1 {
     font-size: 60px;
   }
-  
+
 
   .features-container {
     flex-direction: row;
@@ -501,9 +580,11 @@ header nav ul li>a {
   .features-container .box {
     width: 50%;
   }
+
   .features-container .box p {
     font-size: 50px;
   }
+
   .features-container .box .text h4 {
     font-size: 60px;
   }
@@ -517,10 +598,12 @@ header nav ul li>a {
   .about .text {
     width: 50%;
   }
+
   .about .content .text p {
     font-size: 50px;
   }
 }
+
 /* Super Ultra-wide devices  */
 /* Ultra-Wide Devices (2560px) */
 @media (min-width: 2560px) {
@@ -540,6 +623,7 @@ header nav ul li>a {
   header nav ul {
     gap: 30px;
   }
+
   header nav ul li {
     font-size: 30px;
   }
@@ -613,16 +697,20 @@ header nav ul li>a {
   .about .text p {
     font-size: 1.8rem;
   }
+
   .container {
     background-color: #eee;
     align-items: center;
   }
+
   .container .box {
     font-size: 40px;
   }
+
   .container .links p {
     font-size: 30px;
   }
+
   .container p {
     display: inline;
     color: grey;
