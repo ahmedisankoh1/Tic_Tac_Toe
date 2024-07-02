@@ -290,7 +290,6 @@ header nav ul li>a {
   }
 
   .features .features-container .box {
-    background-color: red;
     width: 320px;
   }
 
@@ -529,7 +528,8 @@ header nav ul li>a {
   }
 
   .about .text {
-    width: 40%;
+    /* background-color: red; */
+    width: 60%;
   }
 }
 
@@ -604,8 +604,7 @@ header nav ul li>a {
   }
 }
 
-/* Super Ultra-wide devices  */
-/* Ultra-Wide Devices (2560px) */
+/*Super Ultra-Wide Devices (2560px) */
 @media (min-width: 2560px) {
   header {
     padding: 20px 80px;
@@ -691,7 +690,10 @@ header nav ul li>a {
   }
 
   .about .text {
-    width: 60%;
+    width: 70%;
+  }
+  .about .heading h2 {
+    font-size: 70px;
   }
 
   .about .text p {
